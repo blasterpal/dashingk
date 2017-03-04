@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dashing:
+    image: 'frvi/dashing'
+    volumes: 
+      - ./jobs:/dashing/jobs
+      - ./dashboards:/dashing/dashboards
+    ports:
+      - 8080:3030
+
