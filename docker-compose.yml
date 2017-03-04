@@ -3,8 +3,8 @@ services:
   dashing:
     image: 'frvi/dashing'
     volumes: 
-      - ./jobs:/dashing/jobs
-      - ./dashboards:/dashing/dashboards
+      - ./jobs:/jobs
+      - ./dashboards:/dashboards
     ports:
       - 8080:3030
-
+    command: "bash -c 'dashing start' "

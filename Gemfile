@@ -1,4 +1,6 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "dashing"
+gem 'dashing'
+
+## Remove this if you don't need a twitter widget.
+gem 'twitter', '>= 5.9.0'

@@ -36,10 +36,15 @@ Via Command line:
 
 `docker-compose up -d`
 
+Now visit your server/workstation's IP with port `8080`:
+
+`http://<server ip>:8080`
+
 # Docker Customizations
 
 * Put custom jobs in 'jobs' directory
 * Put custom dashboards in 'dashboards' directory
+* Edit configs s in 'config' directory
 
 # To restart Docker containers
 
