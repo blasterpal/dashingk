@@ -1,7 +1,7 @@
 # About 
 
 The docker-compose file runs a Dashing server with two directories mounted from this directory: `jobs` and `dashboards`. These directories can be edited and customized to be loaded into Dashing.
-# Prerequisites
+
 
 Text written `like this is a command`
 
