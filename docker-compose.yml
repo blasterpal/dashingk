@@ -5,6 +5,7 @@ services:
     volumes: 
       - ../dashingk/jobs:/jobs
       - ../dashingk/dashboards:/dashboards
+      - ../dashingk/widgets:/widgets
     ports:
       - 8080:3030
     command: "bash -c 'dashing start' "
