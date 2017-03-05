@@ -5,6 +5,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     backports (3.6.8)
     buftok (0.2.0)
+    coderay (1.1.1)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -23,6 +24,7 @@ GEM
       thor (> 0.18.1)
     domain_name (0.5.20170223)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.1.1)
     equalizer (0.0.11)
     eventmachine (1.2.3)
     execjs (2.0.2)
@@ -44,12 +46,20 @@ GEM
     json (1.8.6)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.8.2)
     multi_json (1.12.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     naught (1.1.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     public_suffix (2.0.5)
     rack (1.5.5)
+    rack-console (1.3.1)
+      rack (>= 1.1)
+      rack-test
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -69,6 +79,7 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
+    slop (3.6.0)
     sprockets (2.10.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -102,8 +113,11 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  dotenv
   httparty
-  twitter (>= 5.9.0)
+  pry
+  rack-console
+  twitter
 
 BUNDLED WITH
    1.10.4

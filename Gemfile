@@ -1,8 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'dashing'
+# base, core
+gem 'dotenv'
 gem 'httparty'
+gem 'pry'
+gem 'rack-console'
 
+# dashing
+gem 'dashing'
 
-## Remove this if you don't need a twitter widget.
-gem 'twitter', '>= 5.9.0'
+# widgets and apps
+gem 'twitter'
+

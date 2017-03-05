@@ -1,9 +1,18 @@
-require 'dotenv'
+require 'rubygems'
+require 'bundler/setup'
 
+# load ENV
+require 'dotenv'
+Dotenv.load
+
+#App and Gems
 require 'dashing'
 
+require 'httparty'
+
+
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, (ENV['DASH_API_TOKEN'] || 'YOUR_AUTH_TOKEN')
 
   helpers do
     def protected!

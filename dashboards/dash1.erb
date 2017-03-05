@@ -8,13 +8,18 @@
 
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="circle-ci-list" data-view="CircleCiList" data-title="CircleCI Status" ></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" data-title="PR Twitter" ></div>
     </li>
+
+    <%#<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">%>
+        <%#<div data-id="twitter_mentions" data-view="TwitterComments" data-title="PrimeRevenue Mentions" ></div>%>
+    <%#</li>%>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="synergy" data-view="Meter" data-title="Synergy" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
@@ -32,9 +37,6 @@
       <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
     </li>
 
-    <li data-row="4" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="circle-ci-list" data-view="CircleCiList" data-title="CircleCI Status" style="background-color:#4b4d51"></div>
-    </li>
 
   </ul>
   <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
