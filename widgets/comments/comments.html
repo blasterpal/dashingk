@@ -1,7 +1,11 @@
 <h1 class="title" data-bind="title"></h1>
+<img class="background" src="/assets/twitter_logo.png">
 <div class="comment-container">
-  <h3><img data-bind-src='current_comment.avatar'/><span data-bind='current_comment.name' class="name"></span></h3>
   <p class="comment" data-bind='quote'></p>
+  <h5>
+    <div data-bind='current_comment.name' class="name"></div>
+    <img data-bind-src='current_comment.avatar'/>
+  </h5>
 </div>
 
 <p class="more-info" data-bind="moreinfo"></p>

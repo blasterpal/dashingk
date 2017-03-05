@@ -13,6 +13,14 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   background-color: $background-color;
 
+  img.background {
+    width: 50% !important;
+    position: absolute;
+    left: 5rem;
+    top: 30px;
+    opacity: 0.2;
+  }
+
   .title {
     color: $title-color;
     margin-bottom: 15px;
@@ -28,6 +36,18 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .more-info {
     color: $moreinfo-color;
+  }
+
+  .comment {
+    padding-left: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+
+  }
+
+  .name {
+    /*font-size: 10;*/
+    font-weight: 1;
   }
 
 }

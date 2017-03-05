@@ -5,6 +5,7 @@ gem 'dotenv'
 gem 'httparty'
 gem 'pry'
 gem 'rack-console'
+gem 'xml-simple'
 
 # dashing
 gem 'dashing'

@@ -107,6 +107,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
@@ -118,6 +119,7 @@ DEPENDENCIES
   pry
   rack-console
   twitter
+  xml-simple
 
 BUNDLED WITH
    1.10.4
