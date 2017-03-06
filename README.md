@@ -53,3 +53,7 @@ Now visit your server/workstation's IP with port `8080`:
 # To stop containers
 
 `docker-compose stop`
+
+# Run Docker container for deployment
+
+docker run -p 8080:3030  primerevenue-docker.jfrog.io/dashingk:0.1.0 
