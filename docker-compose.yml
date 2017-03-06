@@ -3,6 +3,8 @@ services:
   dashing:
     #image: 'frvi/dashing'
     build: '.'
+    env_file:
+      - .env
     volumes: 
       - ../dashingk/jobs:/dashing/jobs
       - ../dashingk/dashboards:/dashing/dashboards

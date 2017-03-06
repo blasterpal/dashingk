@@ -7,9 +7,8 @@ Dotenv.load
 
 #App and Gems
 require 'dashing'
-
 require 'httparty'
-
+require 'rack/console'
 
 configure do
   set :auth_token, (ENV['DASH_API_TOKEN'] || 'YOUR_AUTH_TOKEN')
